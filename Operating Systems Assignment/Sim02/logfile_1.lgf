@@ -1,0 +1,32 @@
+0.00025 - Simulator program starting
+0.000541 - OS: starting process 1
+0.000541 - Process 1: start processing action
+0.061674 - Process 1: end processing action
+0.061674 - OS: removing process 1
+0.061998 - OS: starting process 3
+0.061998 - Process 3: start processing action
+0.123041 - Process 3: end processing action
+0.123041 - Process 3: start processing action
+0.184077 - Process 3: end processing action
+0.184077 - OS: removing process 3
+0.184366 - OS: starting process 2
+0.184366 - Process 2: start processing action
+0.245462 - Process 2: end processing action
+0.245462 - Process 2: start processing action
+0.306537 - Process 2: end processing action
+0.306537 - Process 2: start processing action
+0.367375 - Process 2: end processing action
+0.367375 - Process 2: start processing action
+0.428208 - Process 2: end processing action
+0.428208 - OS: removing process 2
+0.428402 - OS: starting process 4
+0.428402 - Process 4: start processing action
+0.488935 - Process 4: end processing action
+0.488935 - Process 4: start processing action
+0.54961 - Process 4: end processing action
+0.54961 - Process 4: start processing action
+0.610126 - Process 4: end processing action
+0.610126 - Process 4: start processing action
+1.61013 - Process 4: end processing action
+1.61013 - OS: removing process 4
+1.61013 - Simulator program ending

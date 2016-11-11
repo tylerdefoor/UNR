@@ -1,0 +1,58 @@
+#ifndef EIGHTS_H
+#define EIGHTS_H
+
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <stdlib.h>
+
+using namespace std;
+
+class Card
+{
+	public:
+		Card ( int = 0, string = "suit", string = "location" );
+		Card ( const Card& );
+		~Card (  );
+		void setRank ( int );
+		int getRank (  ) const;
+		void setSuit ( string );
+		string getSuit (  ) const;
+		void setLocation ( string );
+		string getLocation (  ) const;
+		bool operator>=( const Card& );
+		Card& operator= ( const Card& );
+	
+	private:
+		int rank;
+		string location;
+		string suit;
+
+	friend bool operator<= ( const Card&, const Card& );
+	friend ostream& operator<< ( ostream&, const Card& );
+	friend ifstream& operator>> ( ifstream&, const Card& );
+};
+
+class Player
+{
+	public:
+		Player (  );
+		Player ( const Player& );
+		~Player (  );
+		void setName ( string );
+		string getName (  ) const;
+		void setHand ( Card* );
+		Card* getHand (  ) const;
+		void setID ( int* );
+		int* getID (  ) const;
+
+	private:
+		string name;
+		int* id;
+		Card* hand;
+
+	friend ostream& operator<< ( ostream&, const Player& );
+	friend ifstream& operator>> ( ifstream&, const Player& );
+};
+
+#endif

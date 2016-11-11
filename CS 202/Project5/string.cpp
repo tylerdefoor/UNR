@@ -1,0 +1,274 @@
+#include "string.h"
+#include <stdlib.h>
+#include <iostream>
+
+using namespace std;
+
+/**
+  *Compares two char* variables
+  *If the significant characters are the same, returns true
+  */
+bool compare ( char* string1, char* string2 )
+{
+	bool result = true;
+	//If the lengths aren't the same, they can't be the same
+	if ( length ( string1 ) != length ( string2 ) )
+		return false;
+	else
+	{
+		while ( *string1 != '\0' )
+		{
+			if ( *string1 != *string2 )
+				result = false;
+		}
+		return result;
+	}
+}
+
+/**
+  *Compares a string literal and a char*
+  *If the significant characters are the same, returns true
+  */
+bool compare ( char* string1, const char* string2 )
+{
+	bool result = true;
+	//If the lengths aren't the same, they can't be the same
+	if ( length ( string1 ) != length ( string2 ) )
+		return false;
+	else
+	{
+		while ( *string1 != '\0' )
+		{
+			if ( *string1 != *string2 )
+				result = false;
+		}
+		return result;
+	}
+}
+
+/**
+  *Compares a char* and a string literal
+  *If the significant characters are the same, returns true
+  */
+bool compare ( const char* string1, char* string2 )
+{
+	bool result = true;
+	//If the lengths aren't the same, they can't be the same
+	if ( length ( string1 ) != length ( string2 ) )
+		return false;
+	else
+	{
+		while ( *string1 != '\0' )
+		{
+			if ( *string1 != *string2 )
+				result = false;
+		}
+		return result;
+	}
+}
+
+/**
+  *Compares two string literals
+  *If the significant characters are the same, returns true
+  */
+bool compare ( const char* string1, const char* string2 )
+{
+	bool result = true;
+	//If the lengths aren't the same, they can't be the same
+	if ( length ( string1 ) != length ( string2 ) )
+		return false;
+	else
+	{
+		while ( *string1 != '\0' )
+		{
+			if ( *string1 != *string2 )
+				result = false;
+		}
+		return result;
+	}
+}
+
+/**
+  *Copies source into dest
+  *Assumes source has a non-garbage value
+  *Assumes dest has a non-garbage value
+  */
+void copy ( char* source, char* dest )
+{
+	if ( dest == NULL )
+	{
+		int size = length ( source ) + 1;
+		dest = new char[size];
+	}
+	else if ( length ( source ) > length ( dest ) )
+	{
+		delete[] dest;
+		int size = length ( source ) + 1;
+		dest = new char[size];
+	}
+	char* home = dest;
+	while ( *source != '\0' )
+	{
+		*dest = *source;
+		dest++;
+		source++;
+	}
+	dest = home;
+}
+
+/**
+  *Copies source into dest
+  *Assumes source has a non-garbage value
+  *Assumes dest has a non-garbage value
+  */
+void copy ( const char* source, char* dest )
+{
+	if ( dest == NULL )
+	{
+		int size = length ( source ) + 1;
+		dest = new char[size];
+	}
+	else if ( length ( source ) > length ( dest ) )
+	{
+		delete[] dest;
+		int size = length ( source ) + 1;
+		dest = new char[size];
+	}
+	char* home = dest;
+	while ( *source != '\0' )
+	{
+		*dest = *source;
+		dest++;
+		source++;
+	}
+	*dest = *source;
+	dest = home;
+	cout << &dest << endl;
+}
+
+/**
+  *Concatenates two char* variables into dest
+  *The new string is string1 followed by string2
+  *Assumes that dest is set to NULL
+  */
+void concat ( char* string1, char* string2, char* dest )
+{
+	int size = length ( string1 ) + length ( string2 ) + 1;
+	dest = new char[size];
+	while ( *string1 != '\0' )
+	{
+		*dest = *string1;
+		string1++;
+		dest++;
+	}
+	while ( *string2 != '\0' )
+	{
+		*dest = *string2;
+		dest++;
+		string2++;
+	}
+	*dest = '\0';
+}
+
+
+/**
+  *Concatenatesa string literal and a char* into dest
+  *The new string is string1 followed by string2
+  *Assumes that dest is set to NULL
+  */
+void concat ( const char* string1, char* string2, char* dest )
+{
+	int size = length ( string1 ) + length ( string2 ) + 1;
+	dest = new char[size];
+	while ( *string1 != '\0' )
+	{
+		*dest = *string1;
+		string1++;
+		dest++;
+	}
+	while ( *string2 != '\0' )
+	{
+		*dest = *string2;
+		dest++;
+		string2++;
+	}
+	*dest = '\0';
+}
+
+
+/**
+  *Concatenates a char* and a string literal into dest
+  *The new string is string1 followed by string2
+  *Assumes that dest is set to NULL
+  */
+void concat ( char* string1, const char* string2, char* dest )
+{
+	int size = length ( string1 ) + length ( string2 ) + 1;
+	dest = new char[size];
+	while ( *string1 != '\0' )
+	{
+		*dest = *string1;
+		string1++;
+		dest++;
+	}
+	while ( *string2 != '\0' )
+	{
+		*dest = *string2;
+		dest++;
+		string2++;
+	}
+	*dest = '\0';
+}
+
+
+/**
+  *Concatenates two string literals into dest
+  *The new string is string1 followed by string2
+  *Assumes that dest is set to NULL
+  */
+void concat ( const char* string1, const char* string2, char* dest )
+{
+	int size = length ( string1 ) + length ( string2 ) + 1;
+	dest = new char[size];
+	while ( *string1 != '\0' )
+	{
+		*dest = *string1;
+		string1++;
+		dest++;
+	}
+	while ( *string2 != '\0' )
+	{
+		*dest = *string2;
+		dest++;
+		string2++;
+	}
+	*dest = '\0';
+}
+
+/**
+  *Returns the length of a char*
+  */
+int length ( char* source )
+{
+	int length = 0;
+	while ( *source != '\0' )
+	{
+		length++;
+		source++;
+	}
+	return length;
+}
+
+/**
+  *Returns the length of a string literal
+  */
+int length ( const char* source )
+{
+	int length = 0;
+	while ( *source != '\0' )
+	{
+		length++;
+		source++;
+	}
+	return length;
+}

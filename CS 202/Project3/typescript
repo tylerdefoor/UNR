@@ -1,0 +1,340 @@
+Script started on Wed 12 Feb 2014 05:10:35 PM PST
+]0;tylerdefoor@ubuntu: ~/Desktop/s2/Project3tylerdefoor@ubuntu:~/Desktop/s2/Project3$ g++ DeFoor_Tyler.cpp
+]0;tylerdefoor@ubuntu: ~/Desktop/s2/Project3tylerdefoor@ubuntu:~/Desktop/s2/Project3$ ./a.out 
+Enter the name of the Player file
+people
+Enter the name of the Card file
+cards
+1. Display unshuffled
+2. Display players
+3. Shuffle Deck
+4. Display shuffled 
+q. Quit
+1
+heart 1
+heart 2
+heart 3
+heart 4
+heart 5
+heart 6
+heart 7
+heart 8
+heart 9
+heart 10
+heart 11
+heart 12
+heart 13
+spade 1
+spade 2
+spade 3
+spade 4
+spade 5
+spade 6
+spade 7
+spade 8
+spade 9
+spade 10
+spade 11
+spade 12
+spade 13
+diamond 1
+diamond 2
+diamond 3
+diamond 4
+diamond 5
+diamond 6
+diamond 7
+diamond 8
+diamond 9
+diamond 10
+diamond 11
+diamond 12
+diamond 13
+club 1
+club 2
+club 3
+club 4
+club 5
+club 6
+club 7
+club 8
+club 9
+club 10
+club 11
+club 12
+club 13
+1. Display unshuffled
+2. Display players
+3. Shuffle Deck
+4. Display shuffled 
+q. Quit
+2
+Nancy 10001
+Tyler 12345
+Saharath 98765
+Ernest 55555
+1. Display unshuffled
+2. Display players
+3. Shuffle Deck
+4. Display shuffled 
+q. Quit
+3
+1. Display unshuffled
+2. Display players
+3. Shuffle Deck
+4. Display shuffled 
+q. Quit
+4
+diamond 5
+diamond 6
+club 13
+heart 2
+diamond 7
+diamond 8
+heart 7
+spade 12
+heart 11
+heart 8
+club 10
+club 5
+diamond 10
+diamond 3
+diamond 2
+club 3
+heart 9
+spade 3
+heart 13
+spade 2
+spade 9
+spade 7
+diamond 4
+spade 5
+spade 8
+club 9
+club 7
+heart 12
+club 11
+spade 10
+heart 6
+diamond 1
+diamond 12
+diamond 11
+diamond 13
+heart 3
+club 8
+heart 10
+club 12
+spade 6
+club 2
+spade 4
+heart 5
+club 1
+spade 13
+heart 1
+heart 4
+club 6
+spade 1
+spade 11
+club 4
+diamond 9
+1. Display unshuffled
+2. Display players
+3. Shuffle Deck
+4. Display shuffled 
+q. Quit
+3
+1. Display unshuffled
+2. Display players
+3. Shuffle Deck
+4. Display shuffled 
+q. Quit
+4
+spade 11
+spade 6
+club 9
+spade 8
+spade 1
+club 5
+spade 4
+heart 3
+diamond 4
+heart 2
+diamond 13
+club 4
+heart 9
+club 2
+spade 2
+diamond 9
+diamond 5
+heart 1
+diamond 7
+diamond 10
+club 1
+heart 11
+diamond 6
+diamond 1
+diamond 8
+club 7
+heart 10
+club 12
+heart 6
+spade 9
+heart 5
+spade 3
+spade 13
+diamond 12
+club 11
+heart 12
+spade 12
+heart 13
+spade 5
+heart 4
+diamond 2
+club 3
+spade 10
+diamond 11
+heart 7
+club 13
+club 10
+diamond 3
+club 8
+spade 7
+heart 8
+club 6
+1. Display unshuffled
+2. Display players
+3. Shuffle Deck
+4. Display shuffled 
+q. Quit
+q
+]0;tylerdefoor@ubuntu: ~/Desktop/s2/Project3tylerdefoor@ubuntu:~/Desktop/s2/Project3$ ./a.out 
+Enter the name of the Player file
+people
+Enter the name of the Card file
+cards
+1. Display unshuffled
+2. Display players
+3. Shuffle Deck
+4. Display shuffled 
+q. Quit
+1
+heart 1
+heart 2
+heart 3
+heart 4
+heart 5
+heart 6
+heart 7
+heart 8
+heart 9
+heart 10
+heart 11
+heart 12
+heart 13
+spade 1
+spade 2
+spade 3
+spade 4
+spade 5
+spade 6
+spade 7
+spade 8
+spade 9
+spade 10
+spade 11
+spade 12
+spade 13
+diamond 1
+diamond 2
+diamond 3
+diamond 4
+diamond 5
+diamond 6
+diamond 7
+diamond 8
+diamond 9
+diamond 10
+diamond 11
+diamond 12
+diamond 13
+club 1
+club 2
+club 3
+club 4
+club 5
+club 6
+club 7
+club 8
+club 9
+club 10
+club 11
+club 12
+club 13
+1. Display unshuffled
+2. Display players
+3. Shuffle Deck
+4. Display shuffled 
+q. Quit
+2
+Nancy 10001
+Tyler 12345
+Saharath 98765
+Ernest 55555
+1. Display unshuffled
+2. Display players
+3. Shuffle Deck
+4. Display shuffled 
+q. Quit
+3
+1. Display unshuffled
+2. Display players
+3. Shuffle Deck
+4. Display shuffled 
+q. Quit
+4
+club 5
+heart 6
+spade 3
+heart 8
+diamond 12
+diamond 13
+club 6
+heart 9
+spade 1
+spade 11
+heart 12
+heart 1
+club 1
+heart 13
+diamond 5
+club 4
+diamond 6
+club 13
+club 10
+diamond 7
+spade 9
+spade 8
+diamond 8
+diamond 2
+club 12
+heart 10
+diamond 4
+heart 7
+club 8
+club 7
+diamond 10
+heart 5
+spade 5
+club 3
+spade 4
+diamond 11
+club 9
+heart 2
+diamond 3
+diamond 1
+diamond 9
+club 2
+spade 6
+spade 13
+heart 4
+spade 10
